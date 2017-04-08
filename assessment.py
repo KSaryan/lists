@@ -142,6 +142,21 @@ def largest_n_items(items, n):
       largest.insert(0, items[-i])
     return largest
 
+# I also wanted to try doing this without sort
+#but I only managed to return the two smallest items
+# def making_max (items, n):
+#   max_list =[]
+#   for i in range (0, n-1):
+#     for item in items:
+#         for j in items:
+#             if j > item:
+#                 continue
+#             else:
+#                 max_list.insert(0, item)
+#                 items.remove(item)
+#   print max_list
+
+
 
 #####################################################################
 # END OF ASSESSMENT: You can ignore everything below.
