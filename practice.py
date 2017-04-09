@@ -37,12 +37,14 @@ def long_words(words):
         >>> long_words(["all", "are", "tiny"])
         []
     """
-    long_words = []
+    #did it this way first
+    # long_words = []
+    # for word in words:
+    #     if len(word) > 4:
+            # long_words.append(word)
 
-    for word in words:
-        if len(word) > 4:
-            long_words.append(word)
-
+    # tried list comprehension
+    long_words = [ word for word in words if len(word) > 4]
     return long_words
 
 
@@ -60,12 +62,15 @@ def n_long_words(words, n):
         >>> n_long_words(["I", "like", "apples", "bananas", "you"], 5)
         ['apples', 'bananas']
     """
-    long_words = []
 
-    for word in words:
-        if len(word) > n:
-            long_words.append(word)
+    #tried it this way first
+    # long_words = []
+    # for word in words:
+    #     if len(word) > n:
+    #         long_words.append(word)
 
+    #tried list comprehension
+    long_words = [word for word in words if len(word) > n]
     return long_words
 
 
