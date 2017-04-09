@@ -108,8 +108,8 @@ def every_other_item(items):
        ... )
        ['you', 'are', 'good', 'at', 'code']
     """
-    every_other= [] 
-    for i in range (0, len(items), 2):
+    every_other = [] 
+    for i in range(0, len(items), 2):
         every_other.append(items[i])
     return every_other
         
