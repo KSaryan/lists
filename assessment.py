@@ -48,7 +48,7 @@ def print_indices(items):
         3 Volvo
     
     """
-    for i in range (len(items)):
+    for i in range(len(items)):
         print i, items[i]
 
 
